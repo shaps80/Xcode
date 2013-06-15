@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>addChildViewController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#parent controller#&gt; addChildViewController:&lt;#child controller#&gt;];
+	[&lt;#parent controller#&gt;.view addSubview:&lt;#child controller#&gt;.view];
+	[&lt;#child controller#&gt; didMoveToParentViewController:&lt;#parent controller#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DE7F53BB-7F2F-4592-BB3F-5E7B689F9C77</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Adds a child viewController to a parent viewController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add Child ViewController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

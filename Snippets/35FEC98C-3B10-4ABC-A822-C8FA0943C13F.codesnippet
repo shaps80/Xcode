@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>deprecated</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define kVERSION_&lt;#1_0_0#&gt;			"lib&lt;#class#&gt;-&lt;#1.0.0#&gt;"
+
+#define __&lt;#prefix#&gt;_LIB_&lt;#1_0_0#&gt;__ "Deprecated in " kVERSION_&lt;#1_0_0#&gt; ". "
+#define &lt;#prefix#&gt;_DEPRECATED(deprecatedMessage) __attribute__((deprecated(deprecatedMessage)))</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>35FEC98C-3B10-4ABC-A822-C8FA0943C13F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Deprecated definition</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Deprecated</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

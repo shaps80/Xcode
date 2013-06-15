@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fontNames</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(NSArray *)getAllFontNames
+{
+	NSMutableArray *fontNames = [[NSMutableArray alloc] init];
+	NSArray *fontFamilies = [UIFont familyNames];
+	
+	for (NSString *familyName in fontFamilies)
+	{
+		NSArray *names = [UIFont fontNamesForFamilyName:familyName];
+		[fontNames addObjectsFromArray:names];
+		NSLog(@"%@", names);
+	}
+
+	return fontNames;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>86959C95-393C-4FB5-8DA0-671BB6BF9CFA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Print all font names to the console and return them in an array.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Font Names</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>runtimeProperties</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;objc/runtime.h&gt;
+	
+	unsigned int outCount, i;
+	objc_property_t *properties = class_copyPropertyList([self class], &amp;outCount);
+    for( i = 0; i &lt; outCount; i++) 
+	{
+		objc_property_t property = properties[i];
+		NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
+		NSLog(@"%@", propertyName);
+	}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4076EB1E-CBEE-42B5-BFD6-233B1037A713</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>At runtime, this will inspect the object (self) and return a list of all properties.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Runtime: List Properties for Class</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

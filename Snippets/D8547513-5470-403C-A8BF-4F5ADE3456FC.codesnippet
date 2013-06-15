@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>removeChildViewController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[&lt;#child controller#&gt; willMoveToParentViewController:nil];
+[&lt;#child controller#&gt;.view removeFromSuperview];
+[&lt;#child controller#&gt; removeFromParentViewController];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8547513-5470-403C-A8BF-4F5ADE3456FC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Removes a childViewController from its parent</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Remove from Parent View Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

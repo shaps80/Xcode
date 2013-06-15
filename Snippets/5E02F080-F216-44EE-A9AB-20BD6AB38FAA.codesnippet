@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>supportsRetina</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(BOOL)supportsRetina
+{
+	int scale = 1.0;
+	UIScreen *screen = [UIScreen mainScreen];
+	if([screen respondsToSelector:@selector(scale)])
+		scale = screen.scale;
+ 
+	if(scale == 2.0f) return YES;
+	else return NO;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5E02F080-F216-44EE-A9AB-20BD6AB38FAA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Does the device have a retina display</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>supportsRetina</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

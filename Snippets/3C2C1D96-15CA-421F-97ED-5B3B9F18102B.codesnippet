@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>gridIndex</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(NSInteger)indexForPoint:(CGPoint)point columnsInGrid:(NSInteger)cols
+{
+	return (cols * point.y) + point.x;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C2C1D96-15CA-421F-97ED-5B3B9F18102B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Returns the index for a point based on the number of columns in a grid</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Index for Point in Grid</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

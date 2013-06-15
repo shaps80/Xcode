@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rotateIfAllControllersAgree</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    for (UIViewController *controller in self.childViewControllers)
+            if (![controller shouldAutorotateToInterfaceOrientation:toInterfaceOrientation])
+                return (toInterfaceOrientation = UIInterfaceOrientationPortrait);
+        
+        return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C98D2CD-4177-4FD8-9E46-568B1328EC4E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>This will rotate only if all child controllers agree</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Rotate if all child's agree</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

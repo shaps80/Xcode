@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>retainCount</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CFIndex rc = CFGetRetainCount((__bridge CFTypeRef)&lt;#object#&gt;);
+NSLog(@"Retain count for %@: %li", [&lt;#object#&gt; class], rc);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B8CC01AE-5FF3-494D-AA33-1CBD652DC320</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Returns the retain count for any object even in ARC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Retain Count in Arc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
